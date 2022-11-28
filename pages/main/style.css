@@ -86,11 +86,16 @@ header h3 a:hover {
   color: #F9804B;
 }
 
+#burger-menu {
+  display: none;
+}
+
 .hero {
   max-width: 1600px;
   height: 700px;
   background-image: url(../../assets/images/giantpanda.png);
-  background-size:auto;
+  background-size: auto;
+  background-position-y: -80px;
   border: none;
   position: relative;
 }
@@ -122,8 +127,8 @@ header h3 a:hover {
   position: absolute;
   padding: 16px;
   width: 292px;
-  bottom: 116px;
-  right: 320px;
+  bottom: 100px;
+  right: 322px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -152,6 +157,13 @@ header h3 a:hover {
   position: absolute;
   right: 0;
   top: 792px;
+}
+
+#flower640 {
+  display: none;
+}
+#flower320 {
+  display: none;
 }
 
 .backstage_text h2 {
@@ -187,6 +199,11 @@ header h3 a:hover {
   bottom: 0;
   left: 0;
 }
+#palm1000,
+#palm320,
+#strelitzia320 {
+  display: none;
+}
 
 #strelitzia {
   position: absolute;
@@ -209,7 +226,7 @@ header h3 a:hover {
 .pets .animal_cards{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px 30px;
+  gap: 80px 30px;
   margin-top: 180px;
   position: relative;
 }
@@ -238,7 +255,7 @@ header h3 a:hover {
   justify-content: space-between;
   padding: 8px 13px 13px 16px;
   position: absolute;
-  bottom: 0;
+  bottom: -60px;
   width: 100%;
   background-color: white;
   transition: all .2s ease-in-out;
@@ -257,7 +274,7 @@ figure:hover .pet_caption {
 .pets .right_button,
 .pets .left_button {
   position: absolute;
-  top: calc(50% - 31px);
+  top: calc(50% - 18px);
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border: orange;
   width: 62px;
@@ -303,7 +320,7 @@ figure:hover .pet_caption {
   line-height: 22px;
   text-align: center;
   color: #FFF;
-  margin: 80px auto 0;
+  margin: 127px auto 0;
 }
 
 .pets .fav_wrapper .fav_button:hover {
@@ -405,13 +422,17 @@ figure:hover .pet_caption {
   padding-bottom: 60px;
 }
 
+.green_arrow {
+  display: none;
+}
+
 .feed .feed_element h6 {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #333B41;
   width: 168px;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 
 .feed .feed_friend {
@@ -447,6 +468,9 @@ figure:hover .pet_caption {
   bottom: -310px;
   right: 0;
   z-index: -1;
+}
+#leave320{
+  display: none;
 }
 
 .testimonials h3 {
@@ -548,7 +572,7 @@ figure:hover .pet_caption {
   line-height: 22px;
   text-align: center;
   color: #FFF;
-  margin-top: 30px;
+  margin-top: 13px;
 }
 
 .testimonials .leave_feedback:hover {
@@ -630,7 +654,7 @@ footer h2 a {
 }
 
 footer .footer_donate {
-  margin: 68px 0 44px;
+  margin: 35px 0 44px;
   padding: 16px 0;
   width: 298px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -699,6 +723,7 @@ footer .footer_bottom {
 footer .footer_bottom nav ul {
   display: flex;
   gap: 58px;
+  margin-left: 115px;
 }
 
 footer .footer_bottom nav ul li a{
@@ -713,8 +738,12 @@ footer .footer_bottom nav ul li a{
 footer .footer_bottom .copyright h4 {
   font-size: 16px;
   font-weight: 100;
-  line-height: 21px;
+  line-height: 26px;
   color: #FFF;
+}
+
+.copyright {
+  margin-bottom: 10px;
 }
 
 footer nav ul {
@@ -727,4 +756,726 @@ footer nav ul li a:hover {
 
 footer nav ul li:first-child a {
   color: #F9804B;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1440px) {
+  #flower {
+    display: none;
+  }
+  .pets .left_button {
+    left: 34.5%;
+    top: 49%;
+  }
+  .pets .right_button {
+    right: 34.5%;
+    top: 49%;
+  }
+  .pets .animal_cards {
+    gap: 155px 30px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container,
+  header .container {
+    width: 100%;
+    padding: 14px 30px;
+  }
+  #bamboo_cap {
+    width: 455px;
+    height: 408px;
+    object-fit: cover;
+  }
+  .pet {
+    width: 100%;
+  }
+  #strelitzia {
+    bottom: 0;
+    right: 0;
+    width: 241px;
+    height: 180px;
+  }
+  #palm {
+    display: none;
+  }
+  #palm1000 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .testimonials .review p {
+    height: 300px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1000px) {
+  header nav ul {
+    gap: 48px;
+  }
+  .hero {
+    z-index: -1;
+    height: 584px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -95px;
+    padding-bottom: 0;
+  }
+  .hero h2 {
+    font-size: 85px;
+    line-height: 64px;
+    top: 40px;
+    right: 38px;
+  }
+  #orange_ellipse {
+    width: 367px;
+    height: 367px;
+    top: -12px;
+    right: 176px;
+  }
+  .rounded_button {
+    bottom: 130px;
+    right: 140px;
+  }
+  .backstage {
+    gap: 30px;
+    margin-top: 13px;
+  }
+  .backstage_text {
+    display: block;
+  }
+  .backstage_text h2 {
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+  .backstage_text p {
+    line-height: 22.4px;
+    width: 454px;
+  }
+  .backstage_text h3 {
+    margin-top: 53px;
+    margin-bottom: 31px;
+  }
+  .pets .animal_cards {
+    margin-top: 114px;
+  }
+  .pet {
+    width: 100%;
+  }
+  .pets .fav_wrapper .fav_button {
+    margin-top: 132px;
+  }
+  .pets {
+    padding-bottom: 125px;
+  }
+  .feed {
+    padding: 17px 0 50px;
+  }
+  .feed h2 {
+    padding-top: 30px;
+  }
+  .feed h4 {
+    padding-top: 20px;
+    padding-left: 49px;
+  }
+  .feed h5 {
+    padding: 20px 80px 10px 49px;
+  }
+  .feed p {
+    padding: 0 49px;
+  }
+  .feed h3 {
+    padding-top: 40px;
+  }
+  .process_arrow {
+    padding-bottom: 86px;
+  }
+  .feed .feed_friend {
+    margin: 72px auto;
+  }
+  .feed_wrapper {
+    height: 795px;
+  }
+  .testimonials {
+    margin-top: 70px;
+  }
+  .review_wrap:last-child {
+    display: none;
+  }
+  .testimonials .testimonial_cards {
+    margin-top: 30px;
+  }
+  .testimonials #range {
+    width: 395px;
+  }
+  .testimonials .leave_feedback {
+    margin-top: 32px;
+  }
+  #leave {
+    bottom: -268px;
+    right: -25px;
+    transform: scale(0.8);
+  }
+  footer {
+    margin-top: 113px;
+  }
+  footer .footer_bottom nav ul {
+    gap: 46px;
+    margin-left: 85px;
+  }
+  .footer_top {
+    margin-right: 36px;
+  }
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .pets .animal_cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 150px 30px;
+  }
+  .pets .animal_cards figure {
+    justify-self: center;
+  }
+  .pets .animal_cards figure:nth-child(5) {
+    display: none;
+  }
+  .pets .animal_cards figure:nth-child(6) {
+    display: none;
+  }
+  .pets .left_button {
+    left: 41%;
+  }
+  .pets .right_button {
+    right: 41%;
+  }
+  .testimonials .testimonial_cards {
+    grid-auto-flow: row;
+    gap: 15px;
+    width: 90%;
+    margin: 30px auto 0;
+  }
+
+  .testimonials .review p {
+    overflow: hidden;
+    height: 46px;
+  }
+
+  .testimonials #range {
+    display: none;
+  }
+  #bamboo_cap {
+    display: none;
+  }
+  header h1 {
+    border: none;
+  }
+  header h3,
+  header nav {
+    display: none;
+  }
+  #burger-menu {
+    display: block;
+  }
+  .feed .feed_process {
+    gap: 10px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .feed .feed_process {
+    gap: 5px;
+  }
+  .process_arrow {
+    width: 30px;
+  }
+  .pets .right_button {
+    right: 35%;
+  }
+  .pets .left_button {
+    left: 35%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  header .container{
+    height: 34px;
+    padding: 0 20px;
+  }
+  header h1 {
+    font-size: 12px;
+    line-height: 15px;
+    width: 46px;
+    padding: 1px;
+    margin-top: 1px;
+  }
+  #bamboo {
+    top: 12.5px;
+    left: 3px;
+    transform: scale(0.7);
+  }
+  .hero h2 {
+    font-size: 54px;
+    line-height: 41px;
+    width: 256px;
+    top: 50px;
+    right: 15px;
+  }
+  #orange_ellipse {
+    width: 238px;
+    height: 238px;
+    top: 13px;
+    right: 70px;
+  }
+  .hero {
+    height: 374px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -34px;
+    background-position-x: -65px;
+  }
+  .rounded_button {
+    bottom: 75px;
+    left: 23px;
+  }
+  .backstage {
+    padding-top: 10px;
+    padding-left: 3px;
+  }
+  .backstage_text h3 {
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+  .backstage_text h2 {
+    margin-top: 2px;
+  }
+  .backstage_text p {
+    width: 495px;
+    margin: -1px 0 0 -3px;
+  }
+  #flower640 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 370px;
+  }
+  .pets .animal_cards {
+    margin-top: 80px;
+    gap: 135px 30px;
+  }
+  .pets h3 {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .pets h4 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .pets .pet_caption img {
+    transform: scale(0.8);
+  }
+  .pet_caption {
+    padding: 0 7px 20px 10px;
+  }
+  .pets figure {
+    width: 285px;
+    height: 285px;
+  }
+  .pets .left_button {
+    left: 37%;
+    top: 47.5%;
+    z-index: 1;
+  }
+  .pets .right_button {
+    right: 37%;
+    top: 47.5%;
+    z-index: 1;
+  }
+  .pets .fav_wrapper .fav_button {
+    margin-top: 110px;
+  }
+  .pets {
+    padding-bottom: 100px;
+  }
+  #palm1000 {
+    display: block;
+    position: absolute;
+    left: -60px;
+  }
+  #strelitzia {
+    bottom: -22px;
+    right: -30px;
+    transform: scale(0.75);
+  }
+  .feed {
+    padding: 20px 0 20px;
+  }
+  .feed h2 {
+    font-size: 42px;
+    line-height: 50px;
+    padding-top: 10px;
+  }
+  .feed h4 {
+    font-size: 22px;
+    line-height: 26px;
+    padding: 20px 0 0 20px;
+  }
+  .feed h5 {
+    padding: 20px 20px 10px 20px;
+  }
+  .feed p {
+    padding: 0 20px;
+  }
+  .feed h3 {
+    padding-top: 30px;
+  }
+  .feed .container {
+    padding: 0;
+  }
+  .process_arrow {
+    display: none;
+  }
+  .feed .feed_process {
+    gap: 40px;
+    padding-top: 20px;
+    padding-right: 10px;
+    position: relative;
+  }
+  .green_arrow {
+    display: block;
+    position: absolute;
+  }
+  .green_arrow_1 {
+    top: 3px;
+    left: 156px;
+  }
+  .green_arrow_2 {
+    top: 3px;
+    right: 186px;
+  }
+  .feed .feed_friend {
+    margin: 45px auto;
+  }
+  .feed_wrapper {
+    height: 740px;
+  }
+  .testimonials {
+    margin-top: 60px;
+  }
+  .testimonials .container {
+    padding: 0;
+  }
+  .testimonials .testimonial_cards {
+    width: 95%;
+    margin: 25px auto 0;
+    gap: 0;
+  }
+  .review_wrap {
+    height: 85%;
+  }
+  .testimonials .slide_container {
+    margin-top: 0;
+  }
+  .testimonials .leave_feedback {
+    margin: -9px 200px 0;
+    width: 240px;
+  }
+  #leave {
+    bottom: -179px;
+    width: 157px;
+    right: -16px;
+  }
+  footer {
+    margin-top: 80px;
+    padding: 12px 0 50px;
+    position: relative;
+  }
+  footer form {
+    display: none;
+  }
+  footer .socials {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    gap: 20px;
+  }
+  footer .socials a h5 {
+    display: none;
+  }
+  footer .footer_bottom nav ul {
+    gap: 37px;
+    margin-left: 0px;
+  }
+  footer .footer_donate {
+    margin-bottom: 67px;
+  }
+}
+
+@media (max-width: 639px) {
+  .testimonials .testimonial_cards {
+    width: 80%;
+  }
+  #flower640 {
+    display: none;
+  }
+  .testimonials .leave_feedback {
+    margin: -9px 29% 0;
+  }
+  .pets .animal_cards {
+    gap: 135px 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pets .right_button,
+  .pets .left_button {
+    display: none;
+  }
+  .pets .animal_cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 67px 0;
+    margin-top: 37px;
+  }
+  .pets .fav_wrapper .fav_button {
+    margin-top: 67px;
+  }
+  .feed .feed_process {
+    gap: 10px;
+    padding-right: 0;
+  }
+  .testimonials .leave_feedback {
+    margin: -9px 10% 0;
+  }
+  .green_arrow_1,
+  .green_arrow_2 {
+    display: none;
+  }
+  .feed .feed_element img {
+    width: 80px;
+    height: 80px;
+  }
+  .feed .feed_element h6 {
+    width: 100px;
+  }
+  .backstage_text h2 {
+    width: 100%;
+  }
+  .backstage_text p {
+    width: 100%;
+  }
+  .backstage_text h3 {
+    width: 100%;
+  }
+  footer .footer_bottom {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 320px)  {
+  .container {
+    width: 320px;
+    padding: 0 10px;
+  }
+  header .container {
+    padding: 0 10px;
+  }
+  .hero h2 {
+    font-size: 28px;
+    line-height: 21px;
+    width: 128px;
+    top: 40px;
+    right: 10px;
+  }
+  #orange_ellipse {
+    height: 119px;
+    width: 119px;
+    left: 162px;
+    top: 22px;
+  }
+  .hero {
+    height: 187px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-position-x: -32px;
+  }
+  .rounded_button {
+    bottom: -75px;
+    left: 14px;
+  }
+  .backstage_text h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 80px;
+    width: 300px;
+  }
+  .backstage_text p {
+    width: 297px;
+    margin: -10px 0 0 0px;
+  }
+  .backstage_text h3 {
+    margin-top: 17px;
+    margin-bottom: 19px;
+  }
+  #flower640 {
+    display: none;
+  }
+  #flower320 {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  #palm1000,
+  #strelitzia {
+    display: none;
+  }
+  #strelitzia320 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+  #palm320 {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .pets {
+    padding-bottom: 60px;
+  }
+  .feed_wrapper {
+    margin: 0 10px 0;
+    height: 1042px;
+  }
+  .feed h2 {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 20px;
+  }
+  .feed h4 {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+  .feed h5,
+  .feed p {
+    display: none;
+  }
+  .feed .feed_element img {
+    width: 168px;
+    height: 168px;
+  }
+  .feed h3 {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 20px;
+  }
+  .feed .container {
+    padding: 0;
+    width: 320px;
+    height: 100%;
+  }
+  .feed .feed_process {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    gap: 40px;
+  }
+  .feed .feed_process .feed_element:last-child {
+    margin-top: -14px;
+  }
+  .green_arrow_1 {
+    display: block;
+    top: 460px;
+    left: 196px;
+    transform: rotate(84deg);
+}
+  .green_arrow_2 {
+    display: block;
+    top: 212px;
+    right: 4px;
+    transform: rotate(85deg);
+  }
+  .feed .feed_element h6 {
+    margin-top: 13px;
+    width: 168px;
+  }
+  .feed .feed_friend {
+    margin: 35px auto;
+  }
+  .testimonials .leave_feedback {
+    margin: -7px 40px;
+  }
+  .testimonials h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .testimonials {
+    margin-top: 30px;
+  }
+  .testimonials .testimonial_cards {
+    width: 94%;
+    margin: 20px auto 0;
+    height: 375px;
+  }
+  .testimonials .review {
+    padding: 9px;
+  }
+  .testimonials .review p {
+    padding-left: 8px;
+  }
+  #leave {
+    display: none;
+  }
+  #leave320 {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  footer {
+    margin-top: 67px;
+    padding-bottom: 30px;
+  }
+  footer h2 {
+    border: none;
+    width: 100%;
+    padding: 8.5px 0 0 35px;
+  }
+  footer .socials {
+    flex-direction: row;
+    top: 73px;
+    right: 63px;
+    gap: 30px;
+  }
+  #bamboo_footer {
+    top: 5px;
+    left: 158px;
+  }
+  footer .footer_donate {
+    margin-top: 64px;
+    margin-bottom: 30px;
+  }
+  footer .footer_bottom {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  footer .footer_bottom nav ul {
+    gap: 30px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
 }

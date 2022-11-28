@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+#burger {
+  display: none;
+}
+
 header {
   background: #000;
   color: #FFF;
@@ -266,10 +270,10 @@ header h3 a:hover {
   font-weight: 400;
   line-height: 22px;
   color: #929699;
+  position: relative;
 }
 
 #another-amount {
-  position: relative;
   padding: 16px;
   width: 268px;
   border: 1px solid #929699;
@@ -532,4 +536,460 @@ footer nav ul {
 
 footer nav ul li a:hover {
   color: #F9804B;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1220px) {
+  .container {
+    width: 95%
+  }
+  .amount::before {
+    width: 90%;
+  }
+  #dollar-sign {
+    position: absolute;
+    right: 40%;
+    top: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 95%;
+    padding: 0 5px;
+  }
+  header .container {
+    padding: 14px 5px;
+  }
+  header nav ul {
+    gap: 48px;
+  }
+  header h1 {
+    padding: 2.5px 4.75px;
+  }
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -170px;
+  }
+  .donate h3 {
+    width: 90%;
+  }
+  .donate p {
+    width: 95%;
+    padding-top: 30px;
+  }
+  .donate h4 {
+    padding-top: 22px;
+  }
+  .feed {
+    margin-top: 40px;
+    padding: 20px 47px 5px;
+  }
+  .feed h2 {
+    margin-right: 15px;
+    margin-bottom: -20px;
+  }
+  .panda {
+    padding-top: 34px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    width: 532px;
+    margin: 0 auto;
+  }
+  .donate .feed .panda_text p {
+    font-size: 9px;
+    line-height: 13px;
+    width: 100px;
+  }
+  .panda_text {
+    width: 100px;
+    padding-top: 50px;
+  }
+  #panda_widget {
+    padding-left: 30px;
+  }
+  .feed h6 {
+    margin: 44px 18px 18px;
+  }
+  .amount {
+    margin: 20px auto;
+    width: 96%;
+    padding-left: 12px;
+    padding-right: 10px;
+  }
+  .amount label:first-of-type {
+    display: none;
+  }
+  .amount::before {
+    width: 95%;
+  }
+  .amount label::before {
+    transform: translate(-13px, 30px);
+  }
+  #another-amount {
+    margin: 94px auto 0;
+  }
+  #dollar-sign {
+    right: 37%;
+    top: 71%;
+  }
+  .feed h6:last-of-type {
+    margin: 29px 0px 40px;
+  }
+  .donate {
+    padding-bottom: 30px;
+  }
+  .footer_top form {
+    margin-right: 37px;
+  }
+  footer .footer_donate {
+    margin: 34px 0 46px;
+  }
+  footer .footer_bottom nav ul {
+    gap: 48px;
+    margin-left: 120px;
+  }
+  footer .footer_bottom .copyright h4:first-of-type {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 980px) {
+  .copyright {
+    width: 150px;
+  }
+}
+@media (max-width: 768px) {
+  #dollar-sign {
+    right: 33%;
+    top: 71%;
+  }
+  footer .footer_bottom nav ul {
+    margin-left: 0px;
+  }
+  header h3 a {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  header .container {
+    height: 34px;
+    padding: 0 20px;
+  }
+  header h1 {
+    border: none;
+    font-size: 12px;
+    line-height: 15px;
+    width: 47px;
+  }
+  header nav, header h3 {
+    display: none;
+  }
+  #burger {
+    display: block;
+  }
+  #bamboo {
+    top: 11px;
+    left: 1px;
+    transform: scale(0.6);
+  }
+  .hero {
+    height: 335px;
+    background-position-x: -273px;
+  }
+  .donate h3 {
+    font-size: 24px;
+    line-height: 29px;
+    width: 100%;
+    padding-top: 30px;
+  }
+  .donate p {
+    padding-top: 20px;
+    width: 100%;
+  }
+  .donate h4 {
+    padding-top: 30px;
+  }
+  .feed {
+    margin-top: 30px;
+    padding: 30px 47px 5px;
+  }
+  .feed h2 {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .donate .feed .panda_text p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .donate .feed p:first-of-type {
+    text-align: center;
+    width: 110%;
+    padding-right: 0;
+    margin: 0 -25px;
+  }
+  .donate .feed .panda p {
+    width: 205px;
+  }
+  .donate .feed .panda p {
+    text-align: initial;
+  }
+  .panda {
+    padding-top: 50px;
+    gap: 38px;
+    width: 513px;
+  }
+  .panda img:first-of-type {
+    padding-top: 30px;
+  }
+  .feed h6 {
+    margin: 40px -37px 18px;
+  }
+  .amount::before {
+    width: 87%;
+  }
+  .amount {
+    margin: -10px auto;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .amount label::after {
+    top: -40px;
+    right: -40px;
+    padding: 40px;
+  }
+  .amount label:nth-of-type(2) {
+    display: none;
+  }
+  .amount label:nth-of-type(3) {
+    display: none;
+  }
+  .amount label::before {
+    transform: translate(-20px, 31px);
+  }
+  #another-amount {
+    margin: 126px auto 0px;
+    transform: scale(0.68);
+  }
+  .feed h6:last-of-type {
+    margin: 28px 0px 25px;
+  }
+  .donate {
+    padding-bottom: 46px;
+  }
+  #dollar-sign {
+    right: 36%;
+    top: 72.5%;
+  }
+  .footer_top form,
+  footer .socials a h5 {
+    display: none;
+  }
+  footer {
+    padding: 10px 0 10px;
+    position: relative;
+  }
+  footer .socials {
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    gap: 20px;
+  }
+  footer .footer_bottom nav ul {
+    gap: 37px;
+    margin-left: 0px;
+    /* padding-bottom: 15px; */
+  }
+  footer .footer_bottom {
+    padding-top: 23px;
+  }
+  footer .footer_donate {
+    margin: 35px 0 40px;
+  }
+  .copyright {
+    width: 235px;
+  }
+}
+
+@media (max-width: 600px) {
+  .panda {
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+  }
+  #panda_widget {
+    width: 200px;
+  }
+  .feed .panda_text h2 {
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 32px;
+    width: 65px;
+  }
+  .donate .feed .panda_text p {
+    font-size: 9px;
+    line-height: 13px;
+    width: 100px;
+  }
+  #dollar-sign {
+    right: 35%;
+    top: 71.5%;
+  }
+  footer .footer_bottom {
+    flex-direction: column-reverse;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    padding: 0 10px;
+  }
+  header .container {
+    height: 34px;
+    padding: 0 10px;
+  }
+  .hero {
+    height: 187px;
+    background-position-x: -148px;
+  }
+  .donate h3,
+  .donate p {
+    width: 300px;
+  }
+  .donate h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .feed h2 {
+    font-size: 24px;
+    line-height: 29px;
+    width: 232px;
+    margin: 0 auto;
+  }
+  .donate .feed p:first-of-type {
+    font-size: 16px;
+    line-height: 22px;
+    width: 300px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .feed {
+    padding: 20px 0 3px;
+  }
+  .panda {
+    width: 300px;
+    padding-top: 0;
+    gap: unset;
+  }
+  .panda_text {
+    padding-top: 40px;
+    padding-left: 0;
+  }
+  .feed .panda_text h2 {
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 32px;
+    width: 65px;
+  }
+  #panda_widget {
+    width: 160px;
+    height: auto;
+    padding-left: 0;
+  }
+  .donate .feed .panda_text p {
+    font-size: 9px;
+    line-height: 13px;
+    width: 100px;
+  }
+  .panda img:first-of-type {
+    width: 8px;
+    margin-right: 37px;
+    margin-bottom: 14px;
+  }
+  .feed h6 {
+    margin: 4px 0px 12px;
+  }
+  .amount {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15px;
+    margin: -5px auto;
+  }
+  .amount::before {
+    width: 270px;
+  }
+  .amount label {
+    width: 5px;
+    height: 5px;
+    transform: translate(0, 5px);
+  }
+  .amount label::before {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    transform: translate(-10px, 16px);
+  }
+  .amount label::after {
+    padding: 20px;
+    top: -15px;
+    right: -15px;
+  }
+  #another-amount {
+    margin: 66px auto 0px;
+  }
+  #dollar-sign {
+    right: 69px;
+    top: 362px;
+  }
+  .frequency {
+    margin-top: 13px;
+  }
+  .share {
+    width: 101%;
+  }
+  .donate {
+    padding-bottom: 15px;
+  }
+  footer h2 {
+    border: none;
+    width: 200px;
+    margin: 7px auto;
+  }
+  #bamboo_footer {
+    top: 0;
+    left: 108px;
+  }
+  footer .socials {
+    flex-direction: row;
+    margin: 61px auto;
+    width: 280px;
+    justify-content: center;
+    gap: 30px;
+  }
+  footer .footer_donate {
+    margin: 52px 0 34px;
+  }
+  footer .footer_bottom {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    align-items: end;
+  }
+  .copyright {
+    margin-bottom: 30px;
+  }
+  .feed_button_wrapper {
+    display: block;
+  }
 }
