@@ -19,6 +19,108 @@ body {
   margin: 0 auto;
 }
 
+.burger-open-menu {
+  display: none;
+  padding: 10px;
+  z-index: 1;
+}
+
+.burger-open-menu h1 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  width: 66px;
+  height: 42px;
+  padding: 2.84px 3.8px;
+  border: 1px solid #FE9013;
+  position: relative;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.burger-open-menu h1 a,
+.burger-open-menu h3 a,
+.burger-open-menu nav ul li a {
+  text-decoration: none;
+  color: #333B41;
+}
+.burger-open-menu h1 a {
+  color: #FE9013;
+}
+.burger-open-menu nav ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-bottom: 15px;
+}
+.burger-open-menu h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  margin-bottom: 40px;
+}
+.burger-open-menu #orangebamboo {
+  position: absolute;
+  top: 19px;
+  left: 8px;
+}
+.burger-open-menu nav ul li a:hover,
+.burger-open-menu h3 a:hover {
+  color: #F9804B;
+}
+.burger-open-menu h4 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  border: 1px solid black;
+}
+.burger-open-menu h4:hover {
+  background-color: #F9804B;
+  cursor: pointer;
+}
+
+#michael, #oskar, #fredericka {
+  display: none;
+  height: 390px;
+}
+
+#michael p, #oskar p, #fredericka p {
+  height: 350px;
+}
+
+.cross {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  padding: 7px;
+  color: #FED290;
+}
+
+.popUp {
+  display: block;
+  width: 320px;
+  height: 428px;
+  border: 1px solid white;
+  background-color: white;
+  padding: 20px 36px 17px 17px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  box-shadow: 0 0 2500px 2500px rgba(0,0,0, 0.7);
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 250px 250px rgba(0, 0, 0, 0.7);
+}
+
 header {
   background: #000;
   color: #FFF;
@@ -1302,6 +1404,9 @@ footer nav ul li:first-child a {
     width: 119px;
     left: 162px;
     top: 22px;
+  }
+  .popUp {
+    left: 0;
   }
   .hero {
     height: 187px;
